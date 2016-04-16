@@ -1,0 +1,25 @@
+{
+  "name": "node-modules-snapshot",
+  "version": "1.0.0",
+  "description": "A command line tool to snapshot and persist the node_modules directory so it can be restored quickly",
+  "main": "index.js",
+  "bin": {
+    "node-modules-snapshot": "dist/cli.js"
+  },
+  "scripts": {
+    "prepublish": "webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node_modules",
+    "node-modules",
+    "cache"
+  ],
+  "author": "Nick Malaguti <nm@fea.st>",
+  "license": "MIT",
+  "devDependencies": {
+    "meow": "3.7.0",
+    "tar-fs": "1.12.0",
+    "webpack": "1.13.0"
+  }
+}
