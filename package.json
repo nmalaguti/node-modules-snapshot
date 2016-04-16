@@ -1,6 +1,6 @@
 {
   "name": "node-modules-snapshot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A command line tool to snapshot and persist the node_modules directory so it can be restored quickly",
   "repository": "nmalaguti/node-modules-snapshot",
   "main": "index.js",
