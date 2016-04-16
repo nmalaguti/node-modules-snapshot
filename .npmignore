@@ -39,5 +39,4 @@ jspm_packages
 
 ### Custom ###
 *.js
-!/dist/bundle.js
 !/dist/cli.js

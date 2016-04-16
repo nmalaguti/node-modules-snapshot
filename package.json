@@ -7,8 +7,8 @@
     "node-modules-snapshot": "dist/cli.js"
   },
   "scripts": {
-    "prepublish": "webpack -p",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "rm -f dist/cli.js && webpack -p && chmod +x dist/cli.js",
+    "shrinkwrap": "rm -f npm-shrinkwrap.json && rm -rf node_modules && npm install && npm-shrinkwrap --dev"
   },
   "keywords": [
     "node_modules",
@@ -18,7 +18,11 @@
   "author": "Nick Malaguti <nm@fea.st>",
   "license": "MIT",
   "devDependencies": {
-    "meow": "3.7.0",
+    "json-loader": "0.5.4",
+    "lodash.camelcase": "4.1.1",
+    "minimist": "1.2.0",
+    "mkdirp": "0.5.1",
+    "npm-shrinkwrap": "200.5.1",
     "tar-fs": "1.12.0",
     "webpack": "1.13.0"
   }
