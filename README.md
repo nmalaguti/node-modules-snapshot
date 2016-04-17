@@ -18,8 +18,8 @@ Packaging up "/Users/nmalaguti/git/example/node_modules/"...
 ### Options
 
 ```
--c, --cwd: specific the directory to look in for npm-shrinkwrap.json and to run npm install in
 -n, --dry-run: don't actually do anything, just log what would be done
+--npm: the path to the npm cli to use to run npm install
 ```
 
 
